@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "0084db41-526a-4aa5-a1b4-bdc18e88f6b8",
+  "alias": "DailyTipWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+  // "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Advanced
+  // "group": { "default": "Advanced" },
+
+  "preconfiguredEntries": [{
+    "group": { "default": "OfekPoint" },
+    "groupId": "de0ef1fa-accb-4a79-9a32-f5ad15ef6d79", 
+    "title": { "default": "DailyTip" },
+    "description": { "default": "DailyTip" },
+    "officeFabricIconFontName": "Lightbulb",
+    "properties": {
+      "title": "הטיפ השבועי",
+      "height": 80
+    }
+  }]
+}

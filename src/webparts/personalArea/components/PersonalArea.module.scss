@@ -1,0 +1,132 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+@import '../../../theme.module.scss';
+
+.personalArea {
+  // z-index: 10;
+  // width: 60px;
+  // max-width: 100%;
+  // height: 100%;
+  // position: fixed!important;
+  // color: #fff!important;
+    position: absolute;
+    top: calc(50% - 90px);
+    z-index: 3;
+  &_button {
+    color: #fff !important;
+    background-color: $ms-themePrimary ;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    top: 315px;
+    right: 0;
+    width: 60px;
+    min-height: 198px;
+    max-width: 100%;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 700;
+    & span {
+      transform: rotate(180deg);
+      white-space: nowrap;
+      display: block;
+      text-orientation: mixed;
+      writing-mode: vertical-rl;
+      margin: auto;
+    }
+  }
+}
+
+.panel {
+  color:#333;
+  font-size: 16px;
+  font-weight: 400;
+  // &_title {
+  //   font-weight: 700;
+  //   margin-bottom: 1.5rem;
+  // }
+  :global {
+    button.ms-Button.ms-Panel-closeButton.ms-PanelAction-close {
+      &:hover {
+        background-color: transparent;
+      }
+      i[data-icon-name="Cancel"]{
+        color: #fff;       
+      }
+    }
+    div.ms-Panel-scrollableContent {
+      overflow-y: visible;
+    }
+  }
+  &_content {
+    margin: auto;
+    direction: rtl;
+    // width: 320px;
+    li:not(:last-child) {
+      position: relative;
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+      &::before {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          height: 1px;
+          background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+  &_header{
+    text-align: center;
+    &_image {
+      width: 100px;
+      height: 100px;
+      margin: 1.5rem auto;
+      img {
+        border-radius: 100px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }   
+    h4 {
+      font-weight: 700;
+    }
+  }
+  .section{
+    &_title {
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    &_content {
+      line-height: 24px;
+      a {
+        color:#fff;
+        &:hover{
+          color: #dfe8eb;
+        }
+      }
+    }    
+  }
+  .vacation_title {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px){
+  .personalArea_button{
+    color: #fff!important;
+    background-color: #1895ba;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    top: 315px;
+    right: 0;
+    width: 40px;
+    min-height: 198px;
+    max-width: 100%;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 700;
+  }
+}

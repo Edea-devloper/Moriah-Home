@@ -1,0 +1,45 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+.marquee {
+  // overflow: hidden;
+  margin: 0 auto !important;
+  direction: ltr ;
+  &_block {
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    // margin: 20px 0;
+  }
+  &_inner {
+    display: block;
+    right: 0;
+    position: absolute;
+    // margin: 20px 0;
+    right: 0px;
+    animation: marqueeTop 20s linear infinite;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    direction: rtl;
+    // li:not(:last-child) {
+    li {
+      padding: 10px 0;
+      border-bottom: 1px dashed #c8c8c8;
+    }
+  }
+  &_inner:hover{
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marqueeTop {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: var(--contentHeight);
+  }
+}

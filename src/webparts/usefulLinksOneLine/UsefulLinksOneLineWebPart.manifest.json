@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "bb4f91c5-1cf6-415f-b269-1351a34f165f",
+  "alias": "UsefulLinksOneLineWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "group": { "default": "OfekPoint" },
+    "groupId": "de0ef1fa-accb-4a79-9a32-f5ad15ef6d79", 
+    "title": { "default": "Useful Links One Line" },
+    "description": { "default": "UsefulLinksOneLine" },
+    "officeFabricIconFontName": "Link",
+    "properties": {
+      "title": "קישורים שימושיים",
+      "height": 130,
+      "speed": 1000,
+      "slidesToShow": 5,
+      "autoPlay": false,
+      "disableOrderCaching": false,
+      "imageHeight": 113,
+      "autoplaySpeed": 5000
+    }
+  }]
+}

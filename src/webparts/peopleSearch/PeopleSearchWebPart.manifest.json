@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "6a61eb57-0417-4711-ade0-e3f51afc4304",
+  "alias": "PeopleSearchWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "group": { "default": "OfekPoint" },
+    "groupId": "de0ef1fa-accb-4a79-9a32-f5ad15ef6d79", 
+    "title": { "default": "PeopleSearch" },
+    "description": { "default": "PeopleSearch" },
+    "officeFabricIconFontName": "ProfileSearch",
+    "properties": {
+      "title": "אנשי קשר",
+      "cachingHours": 24
+    }
+  }]
+}

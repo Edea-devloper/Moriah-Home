@@ -1,0 +1,32 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+.carouselContent {
+  height: var(--carousel-height);
+}
+.carouselButtonsContainer {
+  min-width: 0!important;
+  & button span i {
+    font-size: 40px!important;
+    font-weight: 600!important;
+    color: #fff!important;    
+  }
+  & button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: #1895ba!important;    
+  }
+}
+.carouselRoot {
+  color: red;
+}
+.carouselDetails {
+  top: 60%!important;
+  background-color: rgba(0,0,0,.68)!important;
+}
+.carouselTitle {
+  font-size: 40px!important;
+  font-weight: 700;
+}
+.carouselDescription {
+  font-size: 21px!important;
+  font-weight: 400!important;
+}

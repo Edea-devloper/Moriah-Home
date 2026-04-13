@@ -1,0 +1,211 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import './theme.module.scss';
+// $ms-color-themePrimary: #1895ba;
+// $ms-themePrimary: '[theme:themePrimary, default:#0078d7]';
+// $ms-neutralPrimary:  '[theme:neutralPrimary, default:#333333]';
+// filter: invert(56%) sepia(82%) saturate(3927%) hue-rotate(162deg) brightness(90%) contrast(81%);
+
+h1, h2, h3, h4, h5, h6, p, ul, hr {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+ul li {
+    list-style-type: none;
+}
+a, a:active, a:focus, a:hover, button {
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    cursor: pointer;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.container{
+    font-size: 16px;
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #e5e5e5;    
+    direction: rtl;
+    position: relative;
+    z-index: 2;
+    &_header{
+        color: $ms-themePrimary;
+        font-size: 21px;
+        font-weight: 700;
+        margin: 0;
+        display: flex;
+        align-items: center!important;
+        img {
+            margin-left:1rem;
+        }
+    }
+    &_body {
+        margin-top: 1rem;
+        margin-bottom: 4px;
+        padding-top: 0.5rem;
+    }
+}
+
+.iconBox {
+    width: 47px;
+    // max-width: 100%;
+}
+
+
+// .bg_bottom_left:before {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+    
+//     z-index: 1;
+// }
+
+.bg_logo {
+    background-image: url("./assets/logo_bg.svg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    &_tip {        
+        background-image: url("./assets/logo_bg.svg");    
+    }
+    &_round {        
+        background-image: url("./assets/round_shap_bg.svg");    
+    }
+}
+.submitButton{
+    margin-top: 1rem;
+    display: flex;
+    // direction:ltr;
+    border-radius :18px;
+    padding: 0 1rem;
+    font-size: 16px;
+    min-height: 36px;
+    color: #fff;
+    background-color: $ms-themePrimary;
+    border-color: $ms-themePrimary;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    &:hover{
+        color: #fff;
+        background-color: $ms-themeDark;
+        border-color: $ms-themeDark;
+    }
+    &:focus::after {
+        outline: none !important; 
+    }
+}
+.defaultButton{
+    margin-top: 1rem;
+    display: flex;
+    // direction:ltr;
+    border-radius :18px;
+    padding: 0 1rem;
+    font-size: 16px;
+    min-height: 36px;
+    height: 36px;
+    color: #333;
+    background-color: $ms-neutralLight;
+    border-color: $ms-neutralQuaternary;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    &:hover{
+        color: #333;
+        background-color: $ms-neutralQuaternaryAlt;
+        border-color: $ms-neutralQuaternary;
+    }
+    &.is-disabled, &.is-disabled i {
+        color: #d3dfe3;
+    }
+    &:focus::after {
+        outline: none !important; 
+    }
+}
+.uploadButton {
+    border: 1px solid #959595;
+    line-height: 32px;
+    &:hover {
+        border: 1px solid #959595;        
+    }
+}
+
+.linkToAll {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+        color: $ms-themeDark;
+    &:hover{
+        color: $ms-themePrimary;
+    }
+}
+
+@media (max-width: 576px) {
+    .container{
+        padding: 1rem;        
+    }
+}
+@media (max-width: 430px){
+    .defaultButton, .submitButton{
+        font-size: 11px;
+    }
+}
+.dialog_container{
+    :global {
+        .ms-TextField-wrapper label {
+            text-align: right;
+        }
+        .ms-Dialog-title{
+            color: $ms-themePrimary;
+        }
+        .ms-Dialog-subText {
+            font-size: 16px;
+        }
+        .ms-Dialog-action {
+            display: flex;
+            justify-content: center;
+        }
+        button.ms-Button {
+            border-radius: 16px;
+        }
+    }    
+}
+
+.dialog_container {
+    :global {
+        .ms-Dialog-header {
+            text-align: center;
+        }
+    }
+
+}
+
+:global {
+    div.ScrollbarsCustom .ScrollbarsCustom-Thumb:hover, 
+    div.ScrollbarsCustom .ScrollbarsCustom-Thumb.dragging {
+        background: #0000008c!important;
+    }
+    div.ScrollbarsCustom .ScrollbarsCustom-Thumb
+    {
+        background: #d9d9d9!important;
+    }
+    .ScrollbarsCustom-Track.ScrollbarsCustom-TrackY {
+        transform: translateX(12px);
+        transform: translateX(12px);
+        width: 6px!important;
+    }    
+    .ScrollbarsCustom-Track.ScrollbarsCustom-TrackY {
+        background: #00000003!important;
+    }
+    .ControlZone:has(div[id*='vpc_WebPart.PersonalAreaWebPart.external']) {
+        margin: 0px;
+    }
+}

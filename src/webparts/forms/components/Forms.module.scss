@@ -1,0 +1,18 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.forms {
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+  direction: rtl;
+  li {
+    cursor: pointer;  
+  }
+  li:not(:last-child) {
+      margin-bottom: 1rem;
+  }
+  img {
+    margin-left:1rem;
+    margin-right: 1px;
+  }
+}

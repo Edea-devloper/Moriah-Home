@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://moriah1.sharepoint.com/sites/Home/SitePages/Articles/%D7%9B%D7%95%D7%AA%D7%A8%D7%AA-%D7%9B%D7%AA%D7%91%D7%94.aspx",
+      "customActions": {
+        "67eb15e5-68fb-4a39-8327-f82462e1c99b": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "homeNavigation": {
+      "pageUrl": "https://moriah1.sharepoint.com/sites/Home/SitePages/Articles/%D7%9B%D7%95%D7%AA%D7%A8%D7%AA-%D7%9B%D7%AA%D7%91%D7%94.aspx",
+      "customActions": {
+        "67eb15e5-68fb-4a39-8327-f82462e1c99b": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}

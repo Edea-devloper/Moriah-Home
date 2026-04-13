@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="HomeNavigation"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="67eb15e5-68fb-4a39-8327-f82462e1c99b"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>

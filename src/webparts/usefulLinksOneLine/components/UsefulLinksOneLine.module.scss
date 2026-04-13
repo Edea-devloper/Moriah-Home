@@ -1,0 +1,63 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+$ms-color-themePrimary: #1895ba;
+
+.arrow{
+  color:$ms-color-themePrimary
+}
+.linksBody {
+  margin: 1.5rem 2rem
+}
+
+.link_wrap {
+  padding: 5px;
+}
+
+.link {
+  // margin: 20px;
+  width: 113px;
+  height: 113px;
+  background: rgba(33, 190, 241, 0.1);
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  
+  &:hover {
+    background: #21bef1;
+    color: #fff;
+    .link_icon i {
+      color:#fff;
+    }
+    .link_icon img {
+      filter: none;
+    }
+  }  
+  &_icon {
+    width: auto;
+    display: flex;
+    align-items: end;
+    margin-bottom: 6px;
+    & i {
+      -webkit-transition: all 0.4s ease;
+      font-size: 30px;
+      height: 30px;
+      width: 30px;
+      margin: 0px 25px;
+      color: rgb(24, 149, 186);
+    }
+    & img {
+      max-height: 30px;
+      filter: invert(58%) sepia(85%) saturate(1081%) hue-rotate(158deg) brightness(98%) contrast(92%);
+    }
+  }
+  &_label {
+    min-height: 40px;
+    line-height: 19px;
+    font-size: 16px;
+    text-align: center;
+  }
+}

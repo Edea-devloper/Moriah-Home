@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "16.19.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.4.1"
+    },
+    "version": "1.16.1",
+    "libraryName": "moriah-home-page",
+    "libraryId": "61c3cf57-8227-448c-9734-b653bd753118",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "MoriahHomePage",
+    "solutionShortDescription": "MoriahHomePage description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

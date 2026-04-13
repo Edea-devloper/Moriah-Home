@@ -1,0 +1,53 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+$ms-color-themePrimary: #1895ba;
+
+.arrow{
+  color:$ms-color-themePrimary
+}
+.linksBody {
+  margin: 3rem 2rem 0.5rem 2rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#000000;
+  cursor: pointer;
+  &:hover {
+    color: $ms-color-themePrimary;    
+    // font-weight: 600;
+  }
+  &_image {
+    width: 80px;
+    max-width: 100%;
+    min-height: 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;    
+    border: 1px solid #e5e5e5;
+    &_wrapper {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      & img {
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+        margin: auto;
+      }      
+    }
+  }
+  &_label {
+    margin-top: .5rem;
+    font-size: 16px;
+    line-height: 30px;
+    text-align:center;
+  }
+}
+
+:global
+.slick-list{
+  min-height: 146px;
+}

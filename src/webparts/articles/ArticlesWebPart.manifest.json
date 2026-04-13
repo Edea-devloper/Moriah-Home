@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "61a98de8-be9c-4ced-8b7b-ab1c226aa051",
+  "alias": "ArticlesWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "group": { "default": "OfekPoint" },
+    "groupId": "de0ef1fa-accb-4a79-9a32-f5ad15ef6d79", 
+    "title": { "default": "Articles" },
+    "description": { "default": "Articles" },
+    "officeFabricIconFontName": "Articles",
+    "properties": {
+      "title": "כתבות שפורסמו",
+      "seeAllTitle": "ראה הכל",
+      "listUrl": "",
+      "height": 300,
+      "count": 10,
+      "imageHeight": 120,
+      "imageRatio": 1.6,
+      "titleLength": 80,
+      "descriptionLength": 120
+    }
+  }]
+}

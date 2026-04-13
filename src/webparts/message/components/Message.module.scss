@@ -1,0 +1,45 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.msg {
+  display: flex;
+  flex-wrap: wrap-reverse;
+
+  .msg_image {
+    // width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .msg_body {
+    width: 66.6%;
+    line-height: 19px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 658px){
+  .msg .msg_body{
+    width: 100%;
+    line-height: 19px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 677px) {
+  .msg_image {
+    margin: 0 auto 0 auto;
+  }
+}
+
+@media (max-width: 676px) {
+  .msg_image {
+    margin: 0 auto;
+  }
+  .msg_image img{
+    width: 150px;
+    height: 150px;
+  }
+}

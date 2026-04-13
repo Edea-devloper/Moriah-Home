@@ -1,0 +1,164 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "news-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/news/NewsWebPart.js",
+          "manifest": "./src/webparts/news/NewsWebPart.manifest.json"
+        }
+      ]
+    },
+    "news-carousel-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/newsCarousel/NewsCarouselWebPart.js",
+          "manifest": "./src/webparts/newsCarousel/NewsCarouselWebPart.manifest.json"
+        }
+      ]
+    },
+    "daily-tip-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/dailyTip/DailyTipWebPart.js",
+          "manifest": "./src/webparts/dailyTip/DailyTipWebPart.manifest.json"
+        }
+      ]
+    },
+    "news-slider-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/newsSlider/NewsSliderWebPart.js",
+          "manifest": "./src/webparts/newsSlider/NewsSliderWebPart.manifest.json"
+        }
+      ]
+    },
+    "links-slider-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/linksSlider/LinksSliderWebPart.js",
+          "manifest": "./src/webparts/linksSlider/LinksSliderWebPart.manifest.json"
+        }
+      ]
+    },
+    "forms-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/forms/FormsWebPart.js",
+          "manifest": "./src/webparts/forms/FormsWebPart.manifest.json"
+        }
+      ]
+    },
+    "message-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/message/MessageWebPart.js",
+          "manifest": "./src/webparts/message/MessageWebPart.manifest.json"
+        }
+      ]
+    },
+    "useful-links-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/usefulLinks/UsefulLinksWebPart.js",
+          "manifest": "./src/webparts/usefulLinks/UsefulLinksWebPart.manifest.json"
+        }
+      ]
+    },
+    "suggestions-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/suggestions/SuggestionsWebPart.js",
+          "manifest": "./src/webparts/suggestions/SuggestionsWebPart.manifest.json"
+        }
+      ]
+    },
+    "articles-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/articles/ArticlesWebPart.js",
+          "manifest": "./src/webparts/articles/ArticlesWebPart.manifest.json"
+        }
+      ]
+    },
+    "birthday-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/birthday/BirthdayWebPart.js",
+          "manifest": "./src/webparts/birthday/BirthdayWebPart.manifest.json"
+        }
+      ]
+    },
+    "photo-gallery-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/photoGallery/PhotoGalleryWebPart.js",
+          "manifest": "./src/webparts/photoGallery/PhotoGalleryWebPart.manifest.json"
+        }
+      ]
+    },
+    "upcoming-events-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/upcomingEvents/UpcomingEventsWebPart.js",
+          "manifest": "./src/webparts/upcomingEvents/UpcomingEventsWebPart.manifest.json"
+        }
+      ]
+    },
+    "personal-area-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/personalArea/PersonalAreaWebPart.js",
+          "manifest": "./src/webparts/personalArea/PersonalAreaWebPart.manifest.json"
+        }
+      ]
+    },
+    "home-navigation-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/homeNavigation/HomeNavigationApplicationCustomizer.js",
+          "manifest": "./src/extensions/homeNavigation/HomeNavigationApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "people-search-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/peopleSearch/PeopleSearchWebPart.js",
+          "manifest": "./src/webparts/peopleSearch/PeopleSearchWebPart.manifest.json"
+        }
+      ]
+    },
+    "useful-links-one-line-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/usefulLinksOneLine/UsefulLinksOneLineWebPart.js",
+          "manifest": "./src/webparts/usefulLinksOneLine/UsefulLinksOneLineWebPart.manifest.json"
+        }
+      ]
+    }   
+  },
+  "externals": {},
+  "localizedResources": {
+    "NewsWebPartStrings": "lib/webparts/news/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "NewsCarouselWebPartStrings": "lib/webparts/newsCarousel/loc/{locale}.js",
+    "DailyTipWebPartStrings": "lib/webparts/dailyTip/loc/{locale}.js",
+    "NewsSliderWebPartStrings": "lib/webparts/newsSlider/loc/{locale}.js",
+    "LinksSliderWebPartStrings": "lib/webparts/linksSlider/loc/{locale}.js",
+    "FormsWebPartStrings": "lib/webparts/forms/loc/{locale}.js",
+    "MessageWebPartStrings": "lib/webparts/message/loc/{locale}.js",
+    "UsefulLinksWebPartStrings": "lib/webparts/usefulLinks/loc/{locale}.js",
+    "SuggestionsWebPartStrings": "lib/webparts/suggestions/loc/{locale}.js",
+    "ArticlesWebPartStrings": "lib/webparts/articles/loc/{locale}.js",
+    "BirthdayWebPartStrings": "lib/webparts/birthday/loc/{locale}.js",
+    "PhotoGalleryWebPartStrings": "lib/webparts/photoGallery/loc/{locale}.js",
+    "UpcomingEventsWebPartStrings": "lib/webparts/upcomingEvents/loc/{locale}.js",
+    "PersonalAreaWebPartStrings": "lib/webparts/personalArea/loc/{locale}.js",
+    "HomeNavigationApplicationCustomizerStrings": "lib/extensions/homeNavigation/loc/{locale}.js",
+    "PeopleSearchWebPartStrings": "lib/webparts/peopleSearch/loc/{locale}.js",
+    "UsefulLinksOneLineWebPartStrings": "lib/webparts/usefulLinksOneLine/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,452 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+@import '../../../theme.module.scss';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+hr {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+
+// ul li {
+//   list-style-type: none;
+// }
+
+a,
+a:active,
+a:focus,
+a:hover,
+button {
+  text-decoration: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.OfekPointHidden {
+  display: none !important;
+}
+
+.header {
+  display: block;
+  align-self: center;
+  background: linear-gradient(270deg, #0080ad 0%, #0193af 100%);
+}
+
+.homeItemContainer {
+  position: absolute;
+  background: white;
+  z-index: 10;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #45598952;
+  max-height: 280px;
+  width: calc(100% + 56px);
+  overflow: hidden;
+  right: -20px;
+}
+
+.userItem {
+  cursor: pointer;
+  direction: rtl;
+  display: flex;
+  min-height: 48px;
+  // margin-bottom: 5px;
+  padding: 6px 4px 6px 0;
+  cursor: pointer;
+  word-break: break-word;
+  align-items: center;
+
+  &_img {
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    margin-left: 8px;
+    cursor: pointer;
+
+    & img {
+      object-fit: cover;
+      border-radius: 15px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &:focus,
+  &:visited {
+    color: $ms-themePrimary;
+  }
+
+  &:hover {
+    background: #f9f9f9;
+  }
+
+  &:hover h4 {
+    color: $ms-themePrimary;
+  }
+
+  p {
+    color: #959595;
+    font-size: 13px;
+  }
+
+  a,
+  a:visited {
+    color: #959595;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: $ms-themePrimary;
+  }
+
+  h5 {
+    color: #4c4c4c;
+    font-size: 13px;
+    word-break: keep-all;
+  }
+
+  h4 {
+    color: $ms-themeSecondary;
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
+
+.nav {
+  height: 80px;
+  // width: 100%;
+  padding-right: var(--bs-gutter-x, .75rem);
+  padding-left: var(--bs-gutter-x, .75rem);
+  margin-right: 1rem;
+  // margin-left: auto;
+  // max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &_main {
+    display: flex;
+
+    &_logo {
+      display: flex;
+      align-items: center;
+
+      & a {
+        margin-left: auto;
+
+        img {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    flex: 1 1 auto;
+
+    &_items {
+      flex: 1 1 auto;
+      width: 2rem;
+      min-width: 2rem;
+
+      :global {
+
+        .ms-CommandBar,
+        button.ms-Button.ms-Button--commandBar.ms-Button--hasMenu.ms-CommandBar-overflowButton {
+          background: transparent !important;
+        }
+
+        span.ms-Button-flexContainer[data-automationid="splitbuttonprimary"] {
+          background-color: transparent;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+
+        button.ms-Button.ms-Button--commandBar.ms-CommandBarItem-link {
+          background-color: transparent !important;
+          color: #fff !important;
+          font-size: 16px;
+          font-weight: 400;
+          padding: 0px 7px;
+        }
+
+        i.ms-Button-menuIcon[data-icon-name="More"] {
+          color: #fff;
+
+          &:hover {
+            color: #d1d1d1;
+            background: transparent;
+          }
+        }
+
+        button.ms-ContextualMenu-link.is-expanded[role="menuitem"] {
+          background-color: #fff !important;
+        }
+      }
+    }
+  }
+
+  &_search {
+    flex: 1 1;
+    // margin-left: 3rem;
+    display: flex;
+
+    &_box {
+      position: relative;
+      width: 13rem;
+      // input {
+      //   display: block;
+      //   background: transparent;
+      //   height: 40px;
+      //   border: 1px solid #fcfdfd;
+      //   border-radius: 20px;
+      //   padding-left: 40px;
+      //   padding-right: 14px;
+      //   max-width: 180px;
+
+      //   color: #ffffff;
+      //   box-shadow: none !important;
+      //   appearance: none;
+      //   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      //   color: #fff;
+      //   // width: calc(100% - 2.5rem);
+      //   font-size: 16px;
+      //   &:focus {
+      //     outline: 0;
+      //   }
+      //   &::placeholder {
+      //     color: white;
+      //   }
+      // } 
+      &_icon {
+        font-size: 14px;
+        height: 14px;
+        position: absolute;
+        left: -0.7rem;
+        cursor: pointer;
+        color: #fff;
+        bottom: 12px;
+      }
+
+      &_switch {
+        font-size: 20px;
+        height: 20px;
+        position: absolute;
+        cursor: pointer;
+        color: #fff;
+        bottom: 12px;
+        display: contents;
+      }
+    }
+
+    :global {
+
+      .ms-SearchBox-clearButton:hover .ms-Button,
+      .ms-SearchBox-clearButton:hover .ms-Button-icon {
+        background: transparent !important;
+        color: #fff !important;
+      }
+
+      div.ms-SearchBox,
+      div.ms-SearchBox.isActive {
+        background: transparent !important;
+        border-color: #fff;
+      }
+    }
+
+    .searchBox {
+      border-color: #fff !important;
+    }
+  }
+
+  &_middle {
+    width: 1rem;
+  }
+
+  &_end {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+    &_image {
+      width: 34px;
+      height: 34px;
+      margin-left: 1rem;
+
+      img {
+        border-radius: 34px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        margin-left: 1rem;
+      }
+    }
+
+    &_info {
+      color: #fff;
+      min-width: 234px;
+
+      h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      p {
+        font-size: 12px;
+        margin: 0;
+      }
+    }
+
+  }
+
+  &_search_group {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 3rem;
+    gap: 0 30px;
+    flex: 1 1 auto;
+    // @media (max-width: 1360px) {
+    //   // flex-wrap: wrap; //media mobile
+    //   flex-direction: column;
+    // }
+  }
+}
+
+:global {
+
+  div#spSiteHeader,
+  div#spSiteHeader,
+  div#O365_MainLink_Help_container,
+  div#O365_MainLink_MePhoto,
+  div#O365_SearchBoxContainer_container,
+  div#O365_HeaderRightRegion,
+  div#TipsNTricksButton_container {
+    display: none !important;
+  }
+
+  div[data-automationid="SiteHeader"],
+  div.od-TopBar-header div.od-Files-topBar,
+  div[data-automationid="MinimalHeader"] {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav_logo {
+    margin-left: 3rem;
+  }
+}
+
+.nav_plus {
+  height: 100px;
+}
+
+.nav_between{
+  height: 40px;
+}
+
+.nav_minus {
+  height: 0px;
+}
+
+@media (max-width: 1200px) {
+  .nav_search_group {
+    position: absolute;
+    top: 74px;
+    left: 0;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding-right: var(--bs-gutter-x, .75rem);
+    margin-right: 1rem;
+    // right: 10rem;
+  }
+
+  // .nav_plus {
+  //   height: 135px;
+  // }
+
+  // .nav_search {
+  //   margin-top: 15px;
+  // }
+}
+
+@media (max-width: 510px) {
+  .nav_end_image {
+    display: none;
+  }
+}
+
+@media (max-width: 523px) {
+  .nav_main_logo a img{
+    width: 100px;
+  }
+  .nav_main_items {
+    flex: unset;
+    margin-top: -15px;
+    margin-right: calc(85% - 30px);
+  }
+
+  .nav_end_info{
+    min-width: unset;
+  }
+  .nav_end {
+    margin: 0 auto;
+    margin-left: unset;
+  }
+  .nav_end_info h4{
+    font-size: 14px;
+  }
+  .nav_search_group {
+    position: absolute;
+    top: 74px;
+    left: 10px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding-right: var(--bs-gutter-x, .75rem);
+    margin: 30px 0px;
+  }
+
+  .nav_search {
+    margin: 0 auto;
+    flex: unset;
+  }
+}
+
+:global {
+
+  div.ScrollbarsCustom .ScrollbarsCustom-Thumb:hover,
+  nav_search div.ScrollbarsCustom .ScrollbarsCustom-Thumb.dragging {
+    background: #0000008c !important;
+  }
+
+  div.ScrollbarsCustom .ScrollbarsCustom-Thumb {
+    background: #d9d9d9 !important;
+  }
+
+  .ScrollbarsCustom-Track.ScrollbarsCustom-TrackY {
+    transform: translateX(12px);
+    transform: translateX(12px);
+    width: 6px !important;
+  }
+
+  .ScrollbarsCustom-Track.ScrollbarsCustom-TrackY {
+    background: #00000003 !important;
+  }
+}

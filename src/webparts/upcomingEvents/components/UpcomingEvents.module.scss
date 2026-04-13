@@ -1,0 +1,87 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+@import '../../../theme.module.scss';
+
+.event {
+  display: flex;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  cursor: pointer;
+
+  &_dates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    // flex: 1 0 150px;
+    margin-left: 14px;
+    padding-left: 14px;
+    width: 92px;
+    min-width: 92px;
+    direction: ltr;
+    &::before {
+      content: "";
+      position: absolute;
+      height: calc(100% - 14px);
+      width: 1px;
+      background-color: #000;
+      right: 106%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &_dateIcon {
+    font-size: 14px;
+    height: 14px;
+    width: 4px;
+    transform: scaleX(.7) translateX(-4px);
+  }
+  &_timeIcon {
+    font-size: 12px;
+    height: 12px;
+    width: 4px;
+    transform: scaleX(.7) translateX(-6px);
+    padding: 0 6px;
+  }
+  &_time {    
+    position: relative;
+    color:transparent;
+    &_value {
+      color:#323130;      
+      display: inline-flex;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &_date {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    flex: 0 0 50px;
+    h4 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 14px;
+    }
+    p.time {
+      font-weight: 600;
+    }
+  }
+  &_info {
+    p {
+      margin-top: 4px;
+    }
+    &_title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  &_bold{
+    font-weight: 600;
+  }
+}

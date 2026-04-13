@@ -1,0 +1,17 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.dailyTip{
+  font-size: 15px;  
+  line-height: 30px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-weight: 600;
+  padding-top: -13px;
+}
+
+@media (max-width: 576px) {
+  .dailyTip{
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}

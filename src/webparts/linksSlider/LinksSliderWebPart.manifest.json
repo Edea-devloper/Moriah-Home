@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "c68693a8-02f9-40b7-9b6d-d576a304dff0",
+  "alias": "LinksSliderWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+  
+  "preconfiguredEntries": [{
+    "group": { "default": "OfekPoint" },
+    "groupId": "de0ef1fa-accb-4a79-9a32-f5ad15ef6d79", 
+    "title": { "default": "Links Slider" },
+    "description": { "default": "Links Slider" },
+    "officeFabricIconFontName": "Link",
+    "properties": {
+      "title": "קישורים למערכות",
+      "height": 130,
+      "speed": 1000,
+      "slidesToShow": 6,
+      "autoPlay": false,
+      "disableOrderCaching": false,
+      "autoplaySpeed": 5000
+    }
+  }]
+}

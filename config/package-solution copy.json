@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Moriah-Home-Page",
+    "id": "61c3cf57-8227-448c-9734-b653bd753118",
+    "version": "1.0.0.9",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "MoriahHomePage"
+      },
+      "longDescription": {
+        "default": "MoriahHomePage"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "moriah-home-page Feature",
+        "description": "The feature that activates elements of the moriah-home-page solution.",
+        "id": "ce54bec9-59ae-4449-907a-ca8e47d31677",
+        "version": "1.0.0.1",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"          
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/moriah-home-page.sppkg"
+  }
+}

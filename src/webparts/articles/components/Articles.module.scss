@@ -1,0 +1,93 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+@import '../../../theme.module.scss';
+
+.gears {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+}
+
+.articleContainer {
+  font-size: 16px;
+  background: #fff;
+  padding: 1.5rem;
+  direction: rtl;
+  position: relative;
+  z-index: 2;
+
+  &_header {
+    color: $ms-themePrimary;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center !important;
+
+    img {
+      margin-left: 1rem;
+    }
+  }
+
+  &_body {
+    margin-top: 1rem;
+    margin-bottom: 4px;
+    padding-top: 0.5rem;
+  }
+}
+
+.links {
+  color: grey;
+  margin: 0 5px 0 5px;
+
+  :visited {
+    color: grey;
+  }
+
+  &_last {
+    color: grey;
+    float: left;
+    margin: 0 5px 0 5px;
+  }
+}
+
+.articles {
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+  direction: rtl;
+
+  li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  li {
+    display: flex;
+  }
+
+  li:hover {
+    background-color: $ms-neutralLighter;
+    cursor: pointer;
+  }
+
+  &_text {
+    margin-left: 10px;
+    margin-right: 1rem;
+    flex: 1 1 auto;
+  }
+
+  &_image {
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &_title {
+    font-weight: 600;
+  }
+
+  &_description {
+    line-height: 22px;
+  }
+}

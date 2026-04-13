@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "44fdebb7-c781-4909-ab50-5c001e81f6d6",
+  "alias": "PhotoGalleryWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "group": { "default": "OfekPoint" },
+    "groupId": "de0ef1fa-accb-4a79-9a32-f5ad15ef6d79", 
+    "title": { "default": "PhotoGallery" },
+    "description": { "default": "PhotoGallery description" },
+    "officeFabricIconFontName": "ImageDiff",
+    "properties": {
+      "title": "גלריית תמונות אירועים",
+      "height": 130,
+      "imageRatio": 1.6,
+      "speed": 1000,
+      "slidesToShow": 6,
+      "autoplaySpeed": 5000,
+      "autoPlay": false
+    }
+  }]
+}

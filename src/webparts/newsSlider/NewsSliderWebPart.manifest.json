@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "5fb46794-d81d-418f-ad06-a22db44d05c9",
+  "alias": "NewsSliderWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "group": { "default": "OfekPoint" },
+    "groupId": "de0ef1fa-accb-4a79-9a32-f5ad15ef6d79", 
+    "title": { "default": "NewsSlider" },
+    "description": { "default": "NewsSlider" },
+    "officeFabricIconFontName": "News",
+    "properties": {
+      "imageRatio": 60,
+      "speed": 1000,      
+      "autoplaySpeed": 5000,
+      "autoPlay": false
+    }
+  }]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "5fca8013-1676-43da-96d5-a850f2c341e7",
+  "alias": "SuggestionsWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "group": { "default": "OfekPoint" },
+    "groupId": "de0ef1fa-accb-4a79-9a32-f5ad15ef6d79", 
+    "title": { "default": "Suggestions" },
+    "description": { "default": "Suggestions description" },
+    "officeFabricIconFontName": "EditNote",
+    "properties": {
+      "title": "קישורים שימושיים",
+      "description": "אם יש לכם רעיון או הצעה לשיפור או יעול תרגישו חופשי לשתף אותנו",
+      "buttonLabel": "לשיפור או יעול לחצו כאן",
+      "height": 80
+    }
+  }]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "317128ff-a197-48eb-bd9c-9226a2ba6acf",
+  "alias": "PersonalAreaWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "group": { "default": "OfekPoint" },
+    "groupId": "de0ef1fa-accb-4a79-9a32-f5ad15ef6d79", 
+    "title": { "default": "PersonalArea" },
+    "description": { "default": "PersonalArea" },
+    "officeFabricIconFontName": "UserOptional",
+    "properties": {
+      "title": "אזור אישי",
+      "width": 380
+    }
+  }]
+}

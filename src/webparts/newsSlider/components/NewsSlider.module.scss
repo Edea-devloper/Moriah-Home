@@ -1,0 +1,129 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+@import '../../../theme.module.scss';
+
+.container {
+  width: 100%;
+
+  .news {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+
+    &_box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &_info {
+      z-index: 2;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: white;
+      direction: rtl;
+      padding: 1.5rem 1.5rem 2.5rem;
+      cursor: pointer;
+    }
+
+    h4 {
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    p {
+      font-size: 21px;
+      line-height: 25px;
+      margin: 0;
+    }
+  }
+
+  .news_darken {
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 290px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+      z-index: 1;
+    }
+  }
+
+  :global {
+
+    [dir=rtl].slick-prev:before,
+    .slick-prev:before,
+    .slick-next:before,
+    [dir=rtl] .slick-next:before {
+      display: none;
+    }
+
+    .slick-dots {
+      bottom: 16px;
+    }
+
+    .slick-dots li .newsButton {
+      padding: 0;
+    }
+
+    .slick-dots li .newsButton div {
+      // background-color: #3f3f3f;
+      background-color: #fff;
+      border: 2px solid #fff;
+      opacity: 0.85;
+      height: 7px;
+      width: 7px;
+      border-radius: 7px;
+    }
+
+    .slick-dots li .newsButton:before {
+      content: '';
+    }
+
+    .slick-dots li .newsButton:hover div {
+      background-color: $ms-themeLight;
+      border: 2px solid $ms-themeLight;
+    }
+
+    li.slick-active .newsButton div {
+      background-color: $ms-themePrimary;
+      border-color: $ms-themePrimary;
+    }
+
+    .newsSliderContainer .slick-dots li {
+      margin: 0px 1px;
+    }
+
+    button.slick-arrow.slick-prev,
+    button.slick-arrow.slick-next {
+      display: none !important;
+    }
+
+  }
+}
+
+@media (max-width: 576px) {
+  .container .news .news_info {
+    padding: 1.5rem 3rem 2.5rem;
+  }
+
+  .container .news .news_info h4 {
+    font-size: 18px;
+  }
+
+  .container .news .news_info p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,83 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+@import '../../../theme.module.scss';
+
+.suggestion {
+  direction: rtl;
+  text-align: center;
+  font-size: 16px;
+  &_text {
+    line-height: 26px;
+    text-align: center;
+  }
+  &_button{
+    border-radius: 10px;
+    margin-top: 1rem;
+    display: flex;
+    direction:ltr;
+    border-radius :18px;
+    width: 100%;
+    max-width: 320px;
+    font-size: 16px;
+    min-height: 36px;
+    margin: 5px;
+    color: #fff;
+    // background-color: #313690;
+    // border-color: #313690;
+    background-color: $primary-button;
+    border-color: $primary-button;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    &:hover{
+      color: #fff;
+      background-color: $primary-button-dark;
+      border-color: $primary-button-dark;
+    }
+  }
+}
+
+
+.modal {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  min-width: min(90vw, 400px); 
+  &_header {
+    justify-content: space-between;
+    flex: 1 1 auto;
+    border-top: 4px solid $ms-themePrimary;
+    // color: $ms-neutralPrimary;
+    color: $ms-themePrimary;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 12px 12px 14px 24px;  
+  }
+  &_heading {
+    color: $ms-themePrimary;
+    font-weight: bold;
+    margin: 0;
+  }
+  &_body {
+    direction: rtl;
+    flex: 4 4 auto;
+    padding: 0 24px 24px 24px;
+    overflow-y: hidden;  
+  }
+  &_footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+.filePicker {
+  display: flex;
+  align-items: baseline;
+  & ul {
+    margin-right: 10px;
+    li {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
