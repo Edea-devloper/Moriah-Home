@@ -3,7 +3,7 @@
   "solution": {
     "name": "Moriah-Home-Page",
     "id": "61c3cf57-8227-448c-9734-b653bd753118",
-    "version": "1.0.0.53",
+    "version": "1.0.0.54",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": false,
     "isDomainIsolated": false,

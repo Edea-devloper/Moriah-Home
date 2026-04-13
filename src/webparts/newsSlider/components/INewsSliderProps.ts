@@ -7,4 +7,6 @@ export interface INewsSliderProps {
   autoplaySpeed:number;
   speed:number;
   context: WebPartContext;
+  autoPlayVideo: boolean;
+  VideoMuted: boolean;
 }

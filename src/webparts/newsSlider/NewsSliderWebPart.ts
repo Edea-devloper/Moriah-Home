@@ -19,6 +19,8 @@ export interface INewsSliderWebPartProps {
   speed: number;
   imageRatio: number;
   autoPlay: boolean;
+  autoPlayVideo: boolean;
+  VideoMuted: boolean;
 }
 
 export default class NewsSliderWebPart extends BaseClientSideWebPart<INewsSliderWebPartProps> {
@@ -31,6 +33,8 @@ export default class NewsSliderWebPart extends BaseClientSideWebPart<INewsSlider
         autoPlay: this.properties.autoPlay,
         autoplaySpeed: this.properties.autoplaySpeed,
         speed: this.properties.speed,
+        autoPlayVideo:this.properties.autoPlayVideo,
+        VideoMuted:this.properties.VideoMuted,
         context: this.context,
       }
     );
@@ -91,6 +95,14 @@ export default class NewsSliderWebPart extends BaseClientSideWebPart<INewsSlider
                   max: 10000,
                   step: 500,
                   showValue: true
+                }),
+                PropertyPaneToggle("autoPlayVideo", {
+                  label: "Auto Play Video",
+                  checked: false,
+                }),
+                PropertyPaneToggle("VideoMuted", {
+                  label: "Mute Videos",
+                  checked: true,
                 }),              
               ]
             }
